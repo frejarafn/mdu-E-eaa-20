@@ -1,0 +1,56 @@
+/**
+ * projekt: Flexbox tutorial
+ * fil: css/style.css
+ **/
+
+/* Google fonts (NB: load før :root) */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Raleway:wght@100&display=swap');
+
+/* font-family: 'Oswald', sans serif; */
+/* font-family: 'Raleway', sans serif; */
+
+/* Variabler: genbruges og gør designvalg enkle */
+:root {
+  /* farver */
+  --blue: #75bad1;
+  --pink: #e394d8;
+  --purple: #b762cc;
+  --white: #ffffff;
+
+  /* fonte */
+  --font: 'Raleway', sans-serif; /* brødtekst */
+  --displayH: 'Oswald', sans-serif; /* overskrifter */
+
+  /* teksturer ("fliselagte baggrunde") */
+  --stjerner: url("..images/stjerneny.gif");
+}
+/* Her bruges en variabel: --blue */
+body {
+  background-color: var(--blue);
+  font-family: var(--font);
+  background-image: url('images/tiles.jpg');
+}
+
+/* Typografi */
+h1 {
+  font-family: var(--displayH);
+}
+
+#content {
+  display: flex;
+}
+
+aside{
+  width: 33%;
+}
+
+main{
+  max-width: 600px;
+}
+
+aside, main, div {
+  border: 1px solid blue;
+  margin-left: 12px;
+}
+/* Layout: Flexbox */
