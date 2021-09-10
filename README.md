@@ -4,4 +4,4 @@
 
 Undervisningsmaterialer
 
-Her er koden. Og et ling [Danmarks radio](http://dr.dk)
+Her er koden. Og et link til [Danmarks radio](http://dr.dk)
