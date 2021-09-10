@@ -1,0 +1,95 @@
+/**
+ * fil: css/style.css
+ **/
+/* Variabler: genbruges og gør designvalg enkle */
+:root {
+  /* farver */
+  --blue: #70accf;
+  --white: #ffffff;
+  /* fonte */
+
+  /* NAVIGATIONSFARVEN */
+  --navfarve: #b770cf;
+}
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+/*Bruges sådan font-family: 'Bree Serif', serif; */
+
+/* Her bruges en variabel: --blue */
+body {
+  background-color: var(--navfarve);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h3, h4, h5, h6 {
+  font-family: "Bree Serif", serif;
+  color: pink;
+}
+
+header {
+    text-align: center;
+}
+/* Layout */
+
+/* Typografi */
+h2 {
+  border-bottom: 2px solid pink;
+  color: var(--white);
+    background-color: 2px solid var(--navfarve);
+    text-align: center;
+    padding: 23px;
+}
+
+nav{
+  background-color: 2px solid var(--blue);
+  color: var(--white);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* Farven på et link */
+a {
+color: purple;
+text-decoration: none;
+}
+
+/* Farven som dukker op når man holder musen over linket */
+a:hover{
+  background-color: pink;
+}
+
+/* Fjerner bullets forans linksene */
+nav ul{
+  list-style-type:none;
+}
+
+/* Sætter menupunkterne op ved siden af hinanden i stedet for under */
+nav ul li {
+  display: inline;
+}
+
+/* Gør teksten mere letlæsselig - ændrer bredder */
+p {
+  width: 400px;
+  margin-top: 37px;
+}
+
+/* Wrap går rundt om alt i dette eksempel*/
+#wrap {
+  width: 655px;
+  margin: auto; /* Centrerer alt */
+}
+
+figure {
+  height: 450px;
+  width: 500px;
+  overflow: auto;
+}
+
+figure img {
+  max-width: 100%;
+}
+
+.galleri figure {
+  float: left;
+}
